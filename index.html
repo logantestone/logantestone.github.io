@@ -53,27 +53,13 @@
     color: white;
 }
 
-#loginbox {
-    margin-top: 30px;
-}
-
-#loginbox > div:first-child {        
-    padding-bottom: 10px;    
-}
 
 .iconmelon {
     display: block;
     margin: auto;
 }
 
-#form > div {
-    margin-bottom: 25px;
-}
 
-#form > div:last-child {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .panel {    
     background-color: transparent;
@@ -149,10 +135,11 @@
 
 	.navbar-minimal > .navbar-toggler {
 		position: relative;
-		min-height: 60px;
+		min-height: 30px;
 		border-bottom: 1px solid rgb(81, 81, 81);
 		z-index: 100;
 		cursor: pointer;
+		margin-top:10%;
 	}
 
 	.navbar-minimal.open > .navbar-toggler,
@@ -162,7 +149,7 @@
 
 	.navbar-minimal > .navbar-toggler > span {
 		position: absolute;
-		top: 50%;
+		top: 70%;
 		right: 50%;
 		margin: -8px -8px 0 0;
 		width: 16px;
@@ -203,7 +190,7 @@
 		border-bottom: 1px solid rgb(81, 81, 81);
 		width: 100%;
 		text-decoration: none;
-		margin: 0px;
+		margin-top: 15px;
 	}
 
 	.navbar-minimal > .navbar-menu > li > a:last-child {
@@ -345,7 +332,7 @@
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(https://media.giphy.com/media/l46Cmju4v7jLWSJFe/giphy.gif) no-repeat;
+    background: url("https://images.unsplash.com/photo-1466121239823-b0bdb9e64631?dpr=1&auto=format&fit=crop&w=1080&h=NaN&q=80&cs=tinysrgb&crop=&bg=") no-repeat;
     background-size: cover;
 }
 .container h1 {
@@ -355,7 +342,8 @@
 /*start tabscircle*/
 .board{
     width: 75%;
-margin: 60px auto;
+margin-top:-10%;
+margin: 50px auto;
 height: 500px;
 background: transparent;
 /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
@@ -367,12 +355,14 @@ background: transparent;
     margin: 40px auto;
     margin-bottom: 0;
     box-sizing: border-box;
+	padding-bottom:3%;
 
 }
 
 .board > div.board-inner{
    background:transparent !important;
     background-size: 30%;
+	
 }
 
 p.narrow{
@@ -384,12 +374,13 @@ p.narrow{
     height: 2px;
     background: orange;
     position: absolute;
-    width: 80%;
+    width: 55%;
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 50%;
     z-index: 1;
+	
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -468,7 +459,8 @@ li.active span.round-tabs.five{
     background: #000;
 }
 .nav-tabs > li {
-    width: 20%;
+    padding-left:10%;
+	width: 29%;
 }
 /*li.active:before {
     content: " ";
@@ -497,7 +489,7 @@ li.active span.round-tabs.five{
 .nav-tabs > li.active:after {
     content: " ";
     position: absolute;
-    left: 45%;
+    left: 63%;
    opacity:1;
     margin: 0 auto;
     bottom: 0px;
@@ -508,20 +500,22 @@ li.active span.round-tabs.five{
 .nav-tabs > li a{
    width: 70px;
    height: 70px;
-   margin: 20px auto;
+   margin: -10% auto;
    border-radius: 100%;
    padding: 0;
+   
 }
 
 .nav-tabs > li a:hover{
     background: transparent;
 }
 
-.tab-content{
+.tab-content{margin-top:1px;min-height:32% !important;max-height:32% !important;
 }
+/*maincontent we help small teams*/
 .tab-pane{
    position: relative;
-padding-top: 50px;
+padding-top: 7%;
 }
 .tab-content .head{
     font-family: 'Roboto Condensed', sans-serif;
@@ -537,6 +531,7 @@ padding-top: 50px;
 }
 
 .btn.green{
+	display:none;
     background-color:#5cb85c;
     /*border: 2px solid #5cb85c;*/
     color: #ffffff;
@@ -545,16 +540,17 @@ padding-top: 50px;
 
 
 @media( max-width : 585px ){
+	
 	.moveup { margin-top:-12%;}
     #info_Slogan {margin-top:-12%;}
     .board {
 width: 90%;
 height:auto !important;
-margin-top:-3%;
+margin-top:-10%;
 
 }
     span.round-tabs {
-        font-size:16px;
+font-size:16px;
 width: 50px;
 height: 50px;
 line-height: 50px;
@@ -579,28 +575,41 @@ left: 35%;
 .btn-outline-rounded {
     padding:12px 20px;
     }
-#mobile_Logo {min-width:75%;
-			  min-height:auto !important;
+#mobile_Logo {min-width:98%;
+			  min-height:98%;
 			  margin-top:7%;
 			  padding-left:0;
 			  padding-right:3.8%;
            
 }
-}
+.board .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 10% ;
+    margin-bottom: 0;
+    box-sizing: border-box;
+	padding-bottom:3%;
+	padding-top:10%;
 
+}
+#second_Tagline {padding-top:40%;
+                 padding-bottom:5%;
+ }
+}
 	</style>
 </head>
 
 <body>
 <div class="row">
 <div class="col-md-12 col-lg-12 col-xl-12">
-<img id="mobile_Logo" style="max-width:32%;max-height:32%;padding-top:3%;padding-left:3.52%;" src="http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinal_zpsn6r3y29j.png"/>
+<img id="mobile_Logo" style="max-width:32%;max-height:32%;padding-top:3%;padding-left:3.25%;" src="http://i347.photobucket.com/albums/p447/logothepogo1212/dgfinalfinal6_zpss99wvi9s.png"/>
 </div></div>
 <!--start nav-->
 
                
-                          <video autoplay loop muted poster="screenshot.jpg" id="background">
-        <source src="https://media.giphy.com/media/l46Cmju4v7jLWSJFe/giphy.gif" type="video/mp4">
+                          <video autoplay loop muted poster="scnshot.jpg" id="background">
+        <source src="" type="video/mp4">
     </video>
     <!--https://media.giphy.com/media/3o7btOHBo4Be8Io9IQ/giphy.gif-->
         <div class="container">
@@ -883,23 +892,23 @@ left: 35%;
                      <li class="active">
                      <a href="#home" data-toggle="tab" title="Welcome">
                       <span class="round-tabs one">
-                              <i class="glyphicon glyphicon-home"></i>
+                              <i class="glyphicon glyphicon-ok-sign"></i>
                       </span> 
                   </a></li>
 
                   <li><a href="#profile" data-toggle="tab" title="Profile">
                      <span class="round-tabs two">
-                         <i class="glyphicon glyphicon-user"></i>
+                         <i class="glyphicon glyphicon-sunglasses"></i>
                      </span> 
            </a>
                  </li>
-                 <li><a href="#messages" data-toggle="tab" title="What we have to offer">
+                <li><a href="#messages" data-toggle="tab" title="Work For Us">
                      <span class="round-tabs three">
-                          <i class="glyphicon glyphicon-fire"></i>
+                          <i class="glyphicon glyphicon-briefcase"></i>
                      </span> </a>
                      </li>
 
-                     <li><a href="#settings" data-toggle="tab" title="Contact us">
+                     <!-- <li><a href="#settings" data-toggle="tab" title="Contact us">
                          <span class="round-tabs four">
                               <i class="glyphicon glyphicon-comment"></i>
                          </span> 
@@ -909,16 +918,20 @@ left: 35%;
                          <span class="round-tabs five">
                               <i class="glyphicon glyphicon-ok"></i>
                          </span> </a>
-                     </li>
+                     </li>-->
                      
                      </ul></div>
 
                      <div class="tab-content">
                       <div class="tab-pane fade in active" id="home">
 
-                          <h3 class="head text-center" style="color:#000;font-size:2.3em;margin-top:-27%;padding-bottom:17%;"><strong>We Help Small Teams Work</strong><strong> Big </strong><!--<sup>™</sup>--> <span style="color:#f48260;">♥</span></h3>
+                          <h3 class="head text-center" style="color:#FFF;font-size:2.3em;margin-top:-3%;padding-bottom:10%; text-outline:#F90 10px !important;"><strong>We Make Small Teams Work</strong><strong> Big </strong><!--<sup>™</sup>--> </h3>
                           <p class="narrow text-center" id="info_Slogan">
-                             <strong >Robots are Here to Help. Let us grow your productivity. Let us help you play bigger roles in your industry</strong>
+                          
+                          
+                          
+                          
+                          <h3 id="second_Tagline"style="text-decoration:none;"> Robots are Here to Help.</h3> <!-- <strong >Increase your productivity. Let us help you play bigger roles in your industry</strong> -->
                           </p>
                           
                           <p class="text-center">
@@ -937,10 +950,32 @@ left: 35%;
                           
                       </div>
                       <div class="tab-pane fade" id="messages">
-                          <h3 class="head text-center moveup">yoooooo</h3>
+                          <h3 class="head text-center moveup" style="color:#Fff">  <bold>Do You Even Code Bro?</bold> </h3>
+                          <h4> If You Are Genuinely Passionate About Pounding A Keyboard. We'd Love To Hear Why? <span style="color:#f48260;">♥</span> </h4>
                           <p class="narrow text-center">
-                              Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables Lorem ipsum vegetables
-                          </p>
+                           
+	<br><br>
+	Why work for us?
+	<br>
+	================
+	<br><br>
+	- Work Anywhere/Anytime
+	<br>
+		Get paid for what you deliver without the commute.
+	<br>
+		Pants at work are overrated anyways...
+	<br><br>
+	- Full Transparancy
+	<br>	
+		Collaborate with some of the industry's best engineers from Day 1.
+	<br>	
+		Know your payout and deliverables before writing a single line of code.
+	<br><br>
+	- We Aren't Clingy
+	<br>	
+		We love when our engineers find their dream roles - even if it isn't with us!
+	<br>	
+		Sit a few projects out, we'll keep the codebase hot until you're back </p>
                           
                           <p class="text-center">
                     <a href="" class="btn btn-success btn-outline-rounded green"> yooo <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
@@ -992,79 +1027,11 @@ left: 35%;
 
     
 
-    <!-- owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-</script>
-<script>
-<!--start tiles-->
-$( document ).ready(function() {
-    $(".tile").height($("#tile1").width());
-    $(".carousel").height($("#tile1").width());
-     $(".item").height($("#tile1").width());
-     
-    $(window).resize(function() {
-    if(this.resizeTO) clearTimeout(this.resizeTO);
-	this.resizeTO = setTimeout(function() {
-		$(this).trigger('resizeEnd');
-	}, 10);
-    });
-    
-    $(window).bind('resizeEnd', function() {
-    	$(".tile").height($("#tile1").width());
-        $(".carousel").height($("#tile1").width());
-        $(".item").height($("#tile1").width());
-    });
 
-});
-</script>
-<script>
 
-<!--end tiles-->
-<!--start nav-->
 
-$(document).ready(function() {
-    var $btnSets = $('#responsive'),
-    $btnLinks = $btnSets.find('a');
- 
-    $btnLinks.click(function(e) {
-        e.preventDefault();
-        $(this).siblings('a.active').removeClass("active");
-        $(this).addClass("active");
-        var index = $(this).index();
-        $("div.user-menu>div.user-menu-content").removeClass("active");
-        $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
-    });
-});
 
-$( document ).ready(function() {
-    $("[rel='tooltip']").tooltip();    
- 
-    $('.view').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    ); 
-});
-<!--end nav-->
 </script>
  <script>
  /**
@@ -1119,12 +1086,12 @@ $(function(){
         directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
         density: 10000, // How many particles will be generated: one particle every n pixels
         dotColor: 'orange',
-        lineColor: '#000',
+        lineColor: '#ff9',
         particleRadius: 7, // Dot size
         lineWidth: 1,
         curvedLines: true,
-        proximity: 100, // How close two dots need to be before they join
-        parallax: false
+        proximity: 132, // How close two dots need to be before they join
+        parallax: false,
     });
 
 });
