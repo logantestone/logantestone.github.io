@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="">
+    <meta name="googlebot" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERICDIANAWEDDING</title>
+    <meta name="keywords" content="">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|BenchNine|Mogra|Pacifico" rel="stylesheet">
+    <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Favicon and apple touch icons-->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon.ico">
+ 
+   
+    <link rel="stylesheet" type="text/css" href="#.css" />
+<style>
+html, body {padding-top: 0;
+   background: #333;
+   color: white;
+}
+#churchName {margin: 7% -3% 0 0;}
+/* ------------ FONTS --------------- */
+html, body {
+   font-family: 'Amatic SC', cursive;
+   text-transform: uppercase;
+   font-size: 49px;
+   letter-spacing: -.04rem;
+   text-align: center;
+}
+h3 {
+   font-size: .31rem;
+   letter-spacing: .04rem;
+}
+span.supporting,
+span.credentials {
+   font-size: .63rem;
+}
+span.credentials {
+   text-transform: lowercase;
+}
+span.hidden {
+   /* Hide the letters that are created via animated*/
+   /*visibility: hidden;*/
+   /* Use color instead of visibility for IE */
+   color: black;
+   font-size: inherit;
+   z-index: 0;
+}
+/* ----------- LAYOUT --------------*/
+body {
+   /* hide everything that doesn't fit on-screen*/
+   height: 100%;
+   overflow: hidden;
+}
+body > div * {
+   position: relative;   
+}
+body > div > div {
+   width: 6.94rem;
+   margin-bottom: 500px;
+   margin-left: auto;
+   margin-right: auto;
+}
+body > div > div:first-of-type {
+   margin-top: 40vh;
+}
+body > div > div:last-of-type {
+   margin-bottom: 50vh;;
+}
+/* Stagger all the alignments */
+.directed h3 {
+   right: .7rem;
+}
+.screenplay {
+   right: .55rem;
+}
+.screenplay h3 {
+   left: .43rem;
+}
+.screenplay h2:nth-of-type(2) {
+   left: .275rem;
+}
+.screenplay h2:last-of-type {
+   right: .57rem;
+}
+.story {
+   right: .95rem;
+}
+.story h2:last-of-type {
+   right: .32rem;
+}
+.produced {
+   right: 1.38rem;
+}
+.produced h3 {
+   left: .2rem;
+}
+.produced h2:last-of-type {
+   left: .51rem;
+}
+/* ---- VERTICAL LINES & THEIR ANIMATIONS ---- */
+/* these are the same for all animations */
+h2::after {
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: both;
+   /* add z-index since we can't use visibility for the hidden letters*/
+   z-index: 1;
+}
+/* for each dripping letter, create the line, then animate down */
+/* stagger animation start times */
+/* keep a consistent "drip" speed */
+.directed h2::after {
+   /* --- The T in TRACHTENBERG --- */
+   content: "";
+   position: absolute;
+   border-left: .123rem solid white;
+   top: .191rem;
+   left: 2.05rem;
+   bottom: -11.32rem;
+   animation-name: directedT;
+   animation-duration: 6s;
+   animation-delay: 2s;
+}
+@keyframes directedT {
+   from {bottom: .191rem;}
+   to {bottom: -11.32rem;}
+}
+.screenplay h2:first-of-type::after {
+   /* --- The B in CAMPBELL --- */
+   content: "";
+   position: absolute;
+   border-left: .122rem solid white;
+   top: .124rem;
+   left: 4.388rem;
+   bottom: -.75rem;
+   animation-name: screenplayB;
+   animation-duration: 1.7s; /* KEEP CONSTANT */
+   animation-delay: 6s;
+}
+@keyframes screenplayB {
+   from {bottom: .19rem;}
+   to {bottom: -.82rem;}
+}
+.screenplay h2:nth-of-type(2)::after {
+   /* --- The T in STUECKEN --- */
+   content: "";
+   position: absolute;
+   border-left: .117rem solid white;
+   top: 0.18rem;
+   left: 3.47rem;
+   bottom: -.822rem;
+   animation-name: screenplayT;
+   animation-duration: 1.7s; /* KEEP CONSTANT */
+   animation-delay: 6.6s;
+}
+@keyframes screenplayT {
+   from {bottom: .18rem;}
+   to {bottom: -.822rem;}
+}
+.screenplay h2:last-of-type::after {
+   /* --- The I in DAMIEN --- */
+   content: "";
+   position: absolute;
+   border-left: .12rem solid white;
+   top: .111rem;
+   left: 2.75rem;
+   bottom: -11.324rem;
+   animation-name: screenplayI;
+   animation-duration: 6s;
+   animation-delay: 8.4s;
+}
+@keyframes screenplayI {
+   from {bottom: .18rem;}
+   to {bottom: -11.324rem;}
+}
+.story h2:first-of-type::after {
+   /* --- The E in CAMPBELL --- */
+   content: "";
+   position: absolute;
+   border-left: .109rem solid white;
+   top: .114rem;
+   left: 4.8rem;
+   bottom: -.815rem;
+   animation-name: storyE;
+   animation-duration: 1.7s; /* KEEP CONSTANT */
+   animation-delay: 12.6s;
+}
+@keyframes storyE {
+   from {bottom: .18rem;}
+   to {bottom: -.815rem;}
+}
+.story h2:last-of-type::after {
+   /* --- The T in MATT --- */
+   content: "";
+   position: absolute;
+   border-left: .123rem solid white;
+   top: .18rem;
+   left: 2.47rem;
+   bottom: -11.31rem;
+   animation-name: storyT;
+   animation-duration: 6s;
+   animation-delay: 14.3s;
+}
+@keyframes storyT {
+   from {bottom: .18rem;}
+   to {bottom: -11.33rem;}
+}
+.produced h2:first-of-type::after {
+
+   content: "";
+   position: absolute;
+   border-left: .121rem solid white;
+   top: .114rem;
+   left: 2.98rem;
+   bottom: -.808rem;
+   animation-name: producedR;
+   animation-duration: 1.7s; /* KEEP CONSTANT */
+   animation-delay: 18.9s;
+}
+@keyframes producedR {
+   from {bottom: .18rem;}
+   to {bottom: -.808rem;}
+}
+.produced h2:last-of-type::after {
+   
+   content: "";
+   position: absolute;
+   border-left: .111rem solid white;
+   top: .12rem;
+   left: 1.11rem;
+   bottom: -5.5rem;
+   animation-name: producedI;
+   animation-duration: 4s;
+   animation-delay: 20.5s;
+   animation-timing-function: ease-in;
+}
+@keyframes producedI {
+   from {bottom: .18rem;}
+   to {bottom: -70vh;} /* = margin-bottom*/
+}
+/* -----------EMULATE HIDDEN LETTERS --------- */
+span.hidden::before,
+span.hidden::after {
+   content: "";
+   position: absolute;
+   /* IE bug - it won't override the invisibility of the parent*/
+   visibility: visible;
+   /* Instead, rely on color and z-index */
+   z-index: 1;
+}
+span.hidden.e::before {
+   border-top: .09rem solid white;
+   border-bottom: .09rem solid white;
+   top: .3rem;
+   left: .18rem;
+   bottom: .66rem;
+   right: 0rem;
+}
+span.hidden.e::after {
+   border-bottom: .09rem solid white;
+   top: .6rem;
+   left: .18rem;
+   bottom: .37rem;
+   right: 0rem;
+}
+span.hidden.h::before {
+   border-bottom: .07rem solid white;
+   top: .3rem;
+   left: .1rem;
+   bottom: .66rem;
+   right: .16rem;
+}
+span.hidden.h::after {
+   border-left: .09rem solid white;
+   top: .3rem;
+   left: .06rem;
+   bottom: .37rem;
+   right: .18rem;
+}
+span.hidden.b::before {
+   top: .3rem;
+   bottom: .65rem;
+   left: .23rem;
+   right: 0;
+   border-radius: 0 .1rem .09rem 0;
+   border-right: .1rem solid white;
+   border-top: .1rem solid white;
+   border-bottom: .09rem solid white;
+}
+span.hidden.b::after {
+   top: .6rem;
+   bottom: .34rem;
+   left: .23rem;
+   right: 0;
+   border-radius: 0 .09rem .1rem 0;
+   border-right: .1rem solid white;
+   border-bottom: .1rem solid white;
+}
+/* ---------- WHOLE PAGE ANIMATIONS ---------- */
+/* fade in to start */
+body {
+   animation-name: fadeIn;
+   animation-duration: .7s;
+   animation-delay: .8s;
+   animation-timing-function: ease;
+   animation-fill-mode: both;
+}
+@keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+/* scroll the credits through they body window */
+div.credits {
+   animation-name: scroll;
+   animation-duration: 10s;
+   animation-delay: 2.6s;
+   /* start and end very slowly, then go quickly */
+   animation-timing-function: cubic-bezier(.81,0,.19,1);
+   animation-fill-mode: both;
+}
+/* stop at key points to see each credit */
+@keyframes scroll {
+   0% {}
+   /* Don't use calc inside translate - IE bug*/
+   /* Instead, separate into two translateY values */
+   /* Actually, cut the vh segment entirely, it messed up IE */
+   33% {transform: translateY(-500px) /*translateY(-30vh)*/;}
+   67% {transform: translateY(-1300px) /*translateY(-30vh)*/;}
+   100% {transform: translateY(-1900px) /*translateY(-30vh)*/;}
+}
+#colorMe {color:#fff;}
+#colorMe:hover {color:pink;
+opacity: 0.7;}
+#namesWed {font-size:1.2em;margin: 6.5% 0 0 -3%; color: pink;}
+@media (max-width:550px) {
+   
+html, body {
+   font-family: 'Amatic SC', cursive;
+   text-transform: uppercase;
+   font-size: 32px;
+   letter-spacing: -.04rem;
+   text-align: center;
+   margin-top: 0;
+   padding: 0 5px 0 5px;
+   
+}
+#mrg {font-size: 15px;}
+#colorMe {text-align: left;
+}
+   
+}
+#churchName {font-size: 40px;
+text-align: right;
+margin: auto !important;}
+}
+
+
+.menu {
+  font-weight: 100;
+  background: #efefef;
+  width: 150px;
+  height: 100%;
+  padding-left: 50px;
+  position: fixed;
+  z-index: 100;
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  right: -130px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  color: #222;
+}
+.menu:hover, .menu:focus {
+  transform: translate3d(-130px, 0, 0);
+  animation-timing-function: 1s ease-in;
+}
+.menu .title {
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: rotate(270deg);
+  left: 10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+.menu .nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 100;
+}
+.menu .nav li {
+  padding-bottom: 30px;
+  list-style-type: none;
+}
+.menu .nav li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.menu .nav li a:hover {
+  color: #aaa;
+}
+
+.intro {
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+}
+
+
+</style>
+<body>
+<div class="credits ">
+   <div class="directed ">
+      <h3>The Honor of Your Presence</h3>
+      <h2 style="margin-left: -15px;">is Requested</h2>
+   </div>
+   <div class="screenplay ">
+      <h3 id="mrg">at the Marriage of</h3>
+      <p id="namesWed">Eric and Diana <i style='font-size:54px;color:#fff;' class="fa fa-diamond"></i></p>
+      
+     
+   </div>
+   <div class="story ">
+      <h3 style="margin-right: -20%;">August 5th, 2017</h3>
+      
+   <div id="churchName" class="produced " >
+      Glenn United Methodist Church
+   </div>
+</div>
+
+<p id=hideMe onclick="changeMe('none') "><a id=colorMe href="../EricDianaWedding.html">
+Click Here to visit Website </a></p>
+
+<!--<div class="menu" style="margin-left: 100%;">
+    <div class="title" style="font-size:72px; margin-left:-32.5%;"> MENU</div>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</div>-->
+
+
+
+</body>
+</html>
