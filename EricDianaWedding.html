@@ -307,8 +307,8 @@ margin:auto;
 #anchor{font-family:logieFont;color:#fff;text-shadow:0.01em 0.01em #333;margin-left:-39%;}
 #glyf {display:none;}
 #itinerary {margin-top:10px !important; background-color:#333;padding:70px 50px 70px 50px;}
-	#slide-1 {height:350px;
-		width:400px;
+	#slide-1 {height:500px;
+		width:100%;
 
 	}
 	@media(max-width:90px){
@@ -435,9 +435,9 @@ CLICK HERE TO GET DIRECTIONS</button><!--endmybtn-->
 </nav>
   
   
-<div class="menu" id="sidemenuz">
-    <div class="title" id='slideways'> <i id="glyf" class="fa fa-sort"></i> <a onDblClick="close();" onclick="clix();" id='anchor'>&nbsp; MENU</a></div>
-    <ul class="nav" style="margin-left:-25.5%; font-family:logieDistrict;color:#333;">
+<div class="menu" id="sidemenuz" onDblClick="close();">
+    <div class="title" id='slideways'> <i id="glyf" class="fa fa-sort"></i> <a onclick="clix();" id='anchor'>&nbsp; MENU</a></div>
+    <ul class="nav" style="margin-left:-25.5%; font-family:logieDistrict;color:#333;" onDblClick="close();">
       <li><a href="https://ericplusdiana.app.rsvpify.com">RSVP</a></li>
       <li><a href="#" onDblClick="hotels();">Hotels in The Area</a></li>
       <li><a href="#" onDblClick="things();">Things To Do</a></li>
