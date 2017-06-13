@@ -428,7 +428,7 @@ a {color:#39A5F7; text-decoration:underline;}
 <body>
 <nav id='navi' class="nav navbar-inverse" style="padding-top:5px;"><!--mybutton-->
 
-<button id='noNav'  class="btn" href="ericplusdiana.app.rsvpify.com" style="background:transparent;font-size:22px;margin-left:1.35em;box-shadow:none;border:none;" onclick="nxtSlide('none')"> RSVP
+<button id='noNav'  onClick='rsvp();' class="btn" href="ericplusdiana.app.rsvpify.com" style="background:transparent;font-size:22px;margin-left:1.35em;box-shadow:none;border:none;" onclick="nxtSlide('none')"> RSVP
  </button><!--endmybtn-->
 <button id='secondNav' class="btn logiNav" style="margin-right:2.7em;" onclick="direct();">
 CLICK HERE TO GET DIRECTIONS</button><!--endmybtn-->
@@ -439,9 +439,9 @@ CLICK HERE TO GET DIRECTIONS</button><!--endmybtn-->
     <div class="title" id='slideways'> <i id="glyf" class="fa fa-sort"></i> <a onClick="clix();" id='anchor'>&nbsp; MENU</a></div>
     <ul class="nav" style="margin-left:-25.5%; font-family:logieDistrict;color:#333;">
       <li><a href="https://ericplusdiana.app.rsvpify.com">RSVP</a></li>
-      <li><a href="#" onDblClick="hotels();">Hotels in The Area</a></li>
-      <li><a href="#" onDblClick="things();">Things To Do</a></li>
-      <li><a href="#" onDblClick="liquor();">Liquor Stores</a></li>
+      <li><a href="#" onClick="hotels();">Hotels in The Area</a></li>
+      <li><a href="#" onClick="things();">Things To Do</a></li>
+      <li><a href="#" onClick="liquor();">Liquor Stores</a></li>
       <li><a href="#itinerary">Itinerary</a></li>
     </ul>
 </div>
@@ -700,6 +700,8 @@ function things (x){window.open("https://www.tripadvisor.com/Attractions-g42716-
 function direct (x){window.open("https://www.google.com/maps/place/Glenn+United+Methodist+Church/@42.5200444,-86.2299474,17z/data=!3m1!4b1!4m5!3m4!1s0x8819ffa5147922f9:0x49e07c9cc4173984!8m2!3d42.5200444!4d-86.2277587");};
 
 function clix (y){document.getElementById('slideways').style.marginLeft='-70px'};
+									       
+function rsvp (x){window.open("https://ericplusdiana.app.rsvpify.com");};									       
   </script>  
     
 </body>
