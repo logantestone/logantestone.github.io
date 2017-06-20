@@ -53,7 +53,10 @@ height:1375px;
 }
 @media screen and (max-width: 640px){
     #itinerary {margin-top:850px; background-color:#333;padding:70px 50px 70px 50px;}
-	#slide-1 {background-image:none; background-color:#667;}
+	#slide-1 {background-image:none; background-color:#667; background: -webkit-linear-gradient(-90deg, #667, #ccc); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #667, #ccc); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #667, #ccc); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #667, #ccc); /* Standard syntax */}
 	#navi {margin-top:-17% !important;}
 }
 #navi {color:#fff;
