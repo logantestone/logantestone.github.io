@@ -6,366 +6,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ERICDIANAWEDDING</title>
     <meta name="keywords" content="">
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|BenchNine|Mogra|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet" type="text/css">
     <!-- Bootstrap and Font Awesome css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Favicon and apple touch icons-->
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.ico">
  
    
     <link rel="stylesheet" type="text/css" href="#.css" />
 <style>
-html, body {padding-top: 0;
-   background: #333;
-   color: white;
+body { padding:0 5px 0 5px;
+color:#FAFAFA;
+background-color:#e7e7e7;
+font-size:16px;
+font-size:162.5%;
 }
-#churchName {margin: 7% -3% 0 0;}
-/* ------------ FONTS --------------- */
-html, body {
-   font-family: 'Amatic SC', cursive;
-   text-transform: uppercase;
-   font-size: 49px;
-   letter-spacing: -.04rem;
-   text-align: center;
+	
+	#cont {margin-top:0;width: 100%;padding-top:0;border:5px 5px 7px 5px solid #fff;}
+	#boat {padding-top:0;padding-left:25%;padding-right: 25%;}
+	#colm {text-align: center; max-width: 100%;max-height:100%; background:none;}
+#slide-1 {width:100%;
+height:1375px;
+  background-image: url("testing903.jpg"); 
+  background-position: center center; 
+  background-repeat: none;
+  background-size: cover !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
 }
-h3 {
-   font-size: .31rem;
-   letter-spacing: .04rem;
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    
 }
-span.supporting,
-span.credentials {
-   font-size: .63rem;
+@media screen and (max-width: 640px){
+    #itinerary {margin-top:850px; background-color:#333;padding:70px 50px 70px 50px;}
+	#slide-1 {background-image:none; background-color:#667; background: -webkit-linear-gradient(-90deg, #667, #ccc); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #667, #ccc); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #667, #ccc); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #667, #ccc); /* Standard syntax */}
+	#navi {margin-top:-17% !important;}
 }
-span.credentials {
-   text-transform: lowercase;
+#navi {color:#fff;
+	margin-top: -22px;
+	border-bottom: 5px solid #fff;
+	border-left:6px solid #222;
+background-color:000;
+font-size:0.6em; 
+font-family: logieFont;
+text-shadow:0.01em 0.01em #fff;}
+#texty {font-size: 1.9em;
+text-align: center;
+color: #fff;
+display:block;
+margin-left: -5% !important;
 }
-span.hidden {
-   /* Hide the letters that are created via animated*/
-   /*visibility: hidden;*/
-   /* Use color instead of visibility for IE */
-   color: black;
-   font-size: inherit;
-   z-index: 0;
+#new { text-align: center;
+font-size: 1.7em;
+color: #fff; 
+display: none;}
+.backGif {
+  background-image: url("https://media.giphy.com/media/3orifhnYavB0PGJPMY/giphy.gif") ;
+  height: 1000px;
+  background-position:top;
+  background-size:cover;
+  background-attachment:fixed;
+  
+  
+  
 }
-/* ----------- LAYOUT --------------*/
-body {
-   /* hide everything that doesn't fit on-screen*/
-   height: 100%;
-   overflow: hidden;
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background-color:transparent;
+  font-size:1.8em;
 }
-body > div * {
-   position: relative;   
+.properBtn {/*border: 0.075em solid #F90; border-radius:5px;*/ margin-top:5%;font-size:65%;background:transparent;padding:5px 7px 5px 7px;color:#f90;} 
+@font-face {
+    font-family: logieDistrict;
+    src: url(DistTh__.otf);
 }
-body > div > div {
-   width: 6.94rem;
-   margin-bottom: 500px;
-   margin-left: auto;
-   margin-right: auto;
+@font-face {
+    font-family: logieFont;
+    src: url(Gilroy-ExtraBold.otf);
 }
-body > div > div:first-of-type {
-   margin-top: 40vh;
-}
-body > div > div:last-of-type {
-   margin-bottom: 50vh;;
-}
-/* Stagger all the alignments */
-.directed h3 {
-   right: .7rem;
-}
-.screenplay {
-   right: .55rem;
-}
-.screenplay h3 {
-   left: .43rem;
-}
-.screenplay h2:nth-of-type(2) {
-   left: .275rem;
-}
-.screenplay h2:last-of-type {
-   right: .57rem;
-}
-.story {
-   right: .95rem;
-}
-.story h2:last-of-type {
-   right: .32rem;
-}
-.produced {
-   right: 1.38rem;
-}
-.produced h3 {
-   left: .2rem;
-}
-.produced h2:last-of-type {
-   left: .51rem;
-}
-/* ---- VERTICAL LINES & THEIR ANIMATIONS ---- */
-/* these are the same for all animations */
-h2::after {
-   animation-timing-function: ease-in-out;
-   animation-fill-mode: both;
-   /* add z-index since we can't use visibility for the hidden letters*/
-   z-index: 1;
-}
-/* for each dripping letter, create the line, then animate down */
-/* stagger animation start times */
-/* keep a consistent "drip" speed */
-.directed h2::after {
-   /* --- The T in TRACHTENBERG --- */
-   content: "";
-   position: absolute;
-   border-left: .123rem solid white;
-   top: .191rem;
-   left: 2.05rem;
-   bottom: -11.32rem;
-   animation-name: directedT;
-   animation-duration: 6s;
-   animation-delay: 2s;
-}
-@keyframes directedT {
-   from {bottom: .191rem;}
-   to {bottom: -11.32rem;}
-}
-.screenplay h2:first-of-type::after {
-   /* --- The B in CAMPBELL --- */
-   content: "";
-   position: absolute;
-   border-left: .122rem solid white;
-   top: .124rem;
-   left: 4.388rem;
-   bottom: -.75rem;
-   animation-name: screenplayB;
-   animation-duration: 1.7s; /* KEEP CONSTANT */
-   animation-delay: 6s;
-}
-@keyframes screenplayB {
-   from {bottom: .19rem;}
-   to {bottom: -.82rem;}
-}
-.screenplay h2:nth-of-type(2)::after {
-   /* --- The T in STUECKEN --- */
-   content: "";
-   position: absolute;
-   border-left: .117rem solid white;
-   top: 0.18rem;
-   left: 3.47rem;
-   bottom: -.822rem;
-   animation-name: screenplayT;
-   animation-duration: 1.7s; /* KEEP CONSTANT */
-   animation-delay: 6.6s;
-}
-@keyframes screenplayT {
-   from {bottom: .18rem;}
-   to {bottom: -.822rem;}
-}
-.screenplay h2:last-of-type::after {
-   /* --- The I in DAMIEN --- */
-   content: "";
-   position: absolute;
-   border-left: .12rem solid white;
-   top: .111rem;
-   left: 2.75rem;
-   bottom: -11.324rem;
-   animation-name: screenplayI;
-   animation-duration: 6s;
-   animation-delay: 8.4s;
-}
-@keyframes screenplayI {
-   from {bottom: .18rem;}
-   to {bottom: -11.324rem;}
-}
-.story h2:first-of-type::after {
-   /* --- The E in CAMPBELL --- */
-   content: "";
-   position: absolute;
-   border-left: .109rem solid white;
-   top: .114rem;
-   left: 4.8rem;
-   bottom: -.815rem;
-   animation-name: storyE;
-   animation-duration: 1.7s; /* KEEP CONSTANT */
-   animation-delay: 12.6s;
-}
-@keyframes storyE {
-   from {bottom: .18rem;}
-   to {bottom: -.815rem;}
-}
-.story h2:last-of-type::after {
-   /* --- The T in MATT --- */
-   content: "";
-   position: absolute;
-   border-left: .123rem solid white;
-   top: .18rem;
-   left: 2.47rem;
-   bottom: -11.31rem;
-   animation-name: storyT;
-   animation-duration: 6s;
-   animation-delay: 14.3s;
-}
-@keyframes storyT {
-   from {bottom: .18rem;}
-   to {bottom: -11.33rem;}
-}
-.produced h2:first-of-type::after {
-
-   content: "";
-   position: absolute;
-   border-left: .121rem solid white;
-   top: .114rem;
-   left: 2.98rem;
-   bottom: -.808rem;
-   animation-name: producedR;
-   animation-duration: 1.7s; /* KEEP CONSTANT */
-   animation-delay: 18.9s;
-}
-@keyframes producedR {
-   from {bottom: .18rem;}
-   to {bottom: -.808rem;}
-}
-.produced h2:last-of-type::after {
-   
-   content: "";
-   position: absolute;
-   border-left: .111rem solid white;
-   top: .12rem;
-   left: 1.11rem;
-   bottom: -5.5rem;
-   animation-name: producedI;
-   animation-duration: 4s;
-   animation-delay: 20.5s;
-   animation-timing-function: ease-in;
-}
-@keyframes producedI {
-   from {bottom: .18rem;}
-   to {bottom: -70vh;} /* = margin-bottom*/
-}
-/* -----------EMULATE HIDDEN LETTERS --------- */
-span.hidden::before,
-span.hidden::after {
-   content: "";
-   position: absolute;
-   /* IE bug - it won't override the invisibility of the parent*/
-   visibility: visible;
-   /* Instead, rely on color and z-index */
-   z-index: 1;
-}
-span.hidden.e::before {
-   border-top: .09rem solid white;
-   border-bottom: .09rem solid white;
-   top: .3rem;
-   left: .18rem;
-   bottom: .66rem;
-   right: 0rem;
-}
-span.hidden.e::after {
-   border-bottom: .09rem solid white;
-   top: .6rem;
-   left: .18rem;
-   bottom: .37rem;
-   right: 0rem;
-}
-span.hidden.h::before {
-   border-bottom: .07rem solid white;
-   top: .3rem;
-   left: .1rem;
-   bottom: .66rem;
-   right: .16rem;
-}
-span.hidden.h::after {
-   border-left: .09rem solid white;
-   top: .3rem;
-   left: .06rem;
-   bottom: .37rem;
-   right: .18rem;
-}
-span.hidden.b::before {
-   top: .3rem;
-   bottom: .65rem;
-   left: .23rem;
-   right: 0;
-   border-radius: 0 .1rem .09rem 0;
-   border-right: .1rem solid white;
-   border-top: .1rem solid white;
-   border-bottom: .09rem solid white;
-}
-span.hidden.b::after {
-   top: .6rem;
-   bottom: .34rem;
-   left: .23rem;
-   right: 0;
-   border-radius: 0 .09rem .1rem 0;
-   border-right: .1rem solid white;
-   border-bottom: .1rem solid white;
-}
-/* ---------- WHOLE PAGE ANIMATIONS ---------- */
-/* fade in to start */
-body {
-   animation-name: fadeIn;
-   animation-duration: .7s;
-   animation-delay: .8s;
-   animation-timing-function: ease;
-   animation-fill-mode: both;
-}
-@keyframes fadeIn {
-   from {opacity: 0;}
-   to {opacity: 1;}
-}
-/* scroll the credits through they body window */
-div.credits {
-   animation-name: scroll;
-   animation-duration: 10s;
-   animation-delay: 2.6s;
-   /* start and end very slowly, then go quickly */
-   animation-timing-function: cubic-bezier(.81,0,.19,1);
-   animation-fill-mode: both;
-}
-/* stop at key points to see each credit */
-@keyframes scroll {
-   0% {}
-   /* Don't use calc inside translate - IE bug*/
-   /* Instead, separate into two translateY values */
-   /* Actually, cut the vh segment entirely, it messed up IE */
-   33% {transform: translateY(-500px) /*translateY(-30vh)*/;}
-   67% {transform: translateY(-1300px) /*translateY(-30vh)*/;}
-   100% {transform: translateY(-1900px) /*translateY(-30vh)*/;}
-}
-#colorMe {color:#fff;}
-#colorMe:hover {color:pink;
-opacity: 0.7;}
-#namesWed {font-size:1.2em;margin: 6.5% 0 0 -3%; color: pink;}
+.moveRight {margin-top:10%;margin-left:8%;
+text-align:left;}
+#headlg {font-size:300%;}
+#robo {font-size:300%;margin-top:-2.7%;margin-right:0%;}
+#robo2 {font-size: 100%;margin-top:1.2%;margin-left:10%;}
+#hur {padding:0 1em 0 0.03em; color: #000 !important;margin-left:6.7em; margin-top:2.7em; display:inline; float:left;}
+#okl {margin-top:34px;color:#fff;opacity:0.8;}
+#directBottom {font-size:0.6em; text-shadow:0.01em 0.01em #fff;margin-top:3%; margin-left:9%;}
+#firstNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;padding-right:3%}
+.logiNav {background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:right;min-width:10.21%;}
+#noNav:hover {color:#ccc; opacity:0.3;text-shadow:0.03em 0.03em #FFF;}
+.logiNav:hover {opacity: 0.8;color:#fff;}
+#buttonLeftone {opacity:1; min-width:6%;background:transparent !important;padding:5px 7px 5px 7px !important; display:inline; float:left;margin-left:9.70%;}
+#buttonLeftone:hover {background:#D37674 !important;}
+#hur:hover{-moz-transform: rotate(360deg);
+                        -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                        -webkit-transition: all 0.6s;
+                        -moz-transition: all 0.6s;
+                        -o-transition: all 0.6s;
+                        -ms-transition: all 0.6s;
+                        transition: all 0.6s;}
+#okl:hover {color:#020D1f !important;}
 @media (max-width:550px) {
-   
-html, body {
-   font-family: 'Amatic SC', cursive;
-   text-transform: uppercase;
-   font-size: 32px;
-   letter-spacing: -.04rem;
-   text-align: center;
-   margin-top: 0;
-   padding: 0 5px 0 5px;
-   
+	
+.nonexist {}
 }
-#mrg {font-size: 15px;}
-#colorMe {text-align: left;
-}
-   
-}
-#churchName {font-size: 40px;
-text-align: right;
-margin: auto !important;}
-}
-
-
-.menu {
+h1{
+             font-size:25px;
+             text-align: left;
+             text-transform:capitalize;
+         }
+        .service-box{
+            position: relative;
+            overflow: hidden;
+            margin-bottom:10px;
+            perspective:1000px;
+            -webkit-perspective:1000px;
+        }
+        .service-icon{
+            width: 100%;
+            height: 220px;
+            padding: 20px;
+            text-align: center;
+            transition: all .5s ease;
+        }
+        .service-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+            width: 100%;
+            height: 220px;
+            padding: 20px;
+            text-align: center;
+            transition: all .5s ease;
+            background-color: #ddd; /*fill color of inside boxes*/
+           
+            backface-visibility:hidden;
+            transform-style: preserve-3d;
+            -webkit-transform: translateY(110px) rotateX(-90deg);
+            -moz-transform: translateY(110px) rotateX(-90deg);
+            -ms-transform: translateY(110px) rotateX(-90deg);
+            -o-transform: translateY(110px) rotateX(-90deg);
+            transform: translateY(110px) rotateX(-90deg);
+        }
+        .service-box .service-icon .front-content{
+            position: relative;
+            top:80px;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .service-box .service-icon .front-content i {
+            font-size: 28px;
+            color: #333;
+            font-weight: normal;
+        }
+        .service-box .service-icon .front-content h3 {
+            font-size: 15px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .service-box .service-content h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #f90; /* color of header inside box */
+            margin-bottom:10px;
+            text-transform: uppercase;
+        }
+        .service-box .service-content p {
+            font-size: 13px;
+            color: #000; /* color of font inside boxes*/
+            margin:0;
+        }
+       
+        .colorGrey{/*background-color: #333;*/
+         background-image:url('https://media.giphy.com/media/c0kJKiM1XzbP2/giphy.gif'); 
+            background-size: cover;
+            background-position: center;}
+        .service-box:hover .service-icon{
+            opacity: 0;
+            -webkit-transform: translateY(-110px) rotateX(90deg);
+            -moz-transform: translateY(-110px) rotateX(90deg);
+            -ms-transform: translateY(-110px) rotateX(90deg);
+            -o-transform: translateY(-110px) rotateX(90deg);
+            transform: translateY(-110px) rotateX(90deg);
+        }
+        .service-box:hover .service-content {
+            opacity: 1;
+            -webkit-transform: rotateX(0);
+            -moz-transform: rotateX(0);
+            -ms-transform: rotateX(0);
+            -o-transform: rotateX(0);
+            transform: rotateX(0);
+        }
+		
+		/* */
+		.menu {
   font-weight: 100;
   background: #efefef;
   width: 150px;
@@ -430,43 +295,418 @@ margin: auto !important;}
   font-style: italic;
 }
 
+/* */
+@media(max-width:490px){
+	#menuWord {font-size:34px; margin-left:-90%;}
+	.containz {
+  position: absolute;
+ width:90%;
+margin:auto;
+  padding-top: 12px;
+  background: #FFFFFF;
+  box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.4);
+ 
+}
+#anchor{font-family:logieFont;color:#fff;text-shadow:0.01em 0.01em #333;margin-left:-39%;}
+#glyf {display:none;}
+#itinerary {margin-top:10px !important; background-color:#333;padding:70px 50px 70px 50px;}
 
+#sidemenuz {display:none;}
+#noNav {float:right !important; padding-top:20px;}
+	}
+	@media(max-width:90px){
+	
+	}
+
+.hotelHeading {
+  font-size: 1.8rem;
+ 
+  padding-left: em;
+  color: #000;
+}
+.switchHotels {
+  position: relative;
+  height: 21rem;
+}
+.hotelSelect {
+  position: relative;
+  height: 7rem;
+  font-size: 1.8rem;
+  line-height: 7rem;
+  padding-left: 3rem;
+  border-top: 1px solid #e7e7e7;
+}
+.hoverClass {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  cursor: pointer;
+}
+.hoverClass-1 {
+  top: 0;
+}
+.hoverClass-1:hover ~ .highlightSelectionblue {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.hoverClass-1:hover ~ .highlightSelectionblue .switchHotels {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.hoverClass-2 {
+  top: 7rem;
+}
+.hoverClass-2:hover ~ .highlightSelectionblue {
+  -webkit-transform: translateY(7rem);
+          transform: translateY(7rem);
+}
+.hoverClass-2:hover ~ .highlightSelectionblue .switchHotels {
+  -webkit-transform: translateY(-7rem);
+          transform: translateY(-7rem);
+}
+
+.hoverClass-3 {
+  top: 14rem;
+}
+.hoverClass-3:hover ~ .highlightSelectionblue {
+  -webkit-transform: translateY(14rem);
+          transform: translateY(14rem);
+}
+.hoverClass-3:hover ~ .highlightSelectionblue .switchHotels {
+  -webkit-transform: translateY(-14rem);
+          transform: translateY(-14rem);
+}
+
+
+
+.highlightSelectionblue {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  width: 38rem;
+  height: 7rem;
+  background: #39A5F7;
+  overflow: hidden;
+  box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43), -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+}
+.highlightSelectionblue .switchHotels {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+  transition: transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43), -webkit-transform 0.5s cubic-bezier(0.59, 0.04, 0.3, 1.43);
+}
+.highlightSelectionblue .hotelSelect {
+  color: #fff;
+  border: none;
+}
+
+
+.fontD {font-family:logieFont;}
+.logieDist {font-family:logieDistrict;}
+#hotHeading { color:#000; padding: 0 2% 0 0;}
+#menuWord {font-size:58px; margin-left:-100%;}
+#option {display:none;}
+#option2 {display:none;}
+#option3 {display:none;}
+a {color:#39A5F7; text-decoration:underline;}
+
+.blkColor {color:#000;}	
+#slideways {font-size:30px; margin-left:-62.5%; color:#fff;text-decoration: overline;}
+#glyf {margin-left:10px;color:#fff;}
+#sidemenuz {margin-left:-35%;}
+#anchor{font-family:logieFont;color:#fff;text-shadow:0.01em 0.01em #333;}
+#itinerary {margin-top:900px; background-color:#333;padding:70px 50px 70px 50px;}
 </style>
+</head>
 <body>
-<div class="credits ">
-   <div class="directed ">
-      <h3>The Honor of Your Presence</h3>
-      <h2 style="margin-left: -15px;">is Requested</h2>
-   </div>
-   <div class="screenplay ">
-      <h3 id="mrg">at the Marriage of</h3>
-      <p id="namesWed">Eric and Diana <i style='font-size:54px;color:#fff;' class="fa fa-diamond"></i></p>
-      
-     
-   </div>
-   <div class="story ">
-      <h3 style="margin-right: -20%;">August 5th, 2017</h3>
-      
-   <div id="churchName" class="produced " >
-      Glenn United Methodist Church
-   </div>
+<nav id='navi' class="nav navbar-inverse" style="padding-top:5px;"><!--mybutton-->
+
+<button id='noNav'  onClick='rsvp();' class="btn" href="ericplusdiana.app.rsvpify.com" style="background:transparent;font-size:22px;margin-left:1.35em;box-shadow:none;border:none;" onclick="nxtSlide('none')"> RSVP
+ </button><!--endmybtn-->
+<button id='secondNav' class="btn logiNav" style="margin-right:2.7em;" onclick="direct();">
+CLICK HERE TO GET DIRECTIONS</button><!--endmybtn-->
+</nav>
+  
+  
+<div class="menu" id="sidemenuz">
+    <div class="title" id='slideways'> <i id="glyf" class="fa fa-sort"></i> <a onClick="clix();" id='anchor'>&nbsp; MENU</a></div>
+    <ul class="nav" style="margin-left:-25.5%; font-family:logieDistrict;color:#333;">
+      <li><a href="https://ericplusdiana.app.rsvpify.com">RSVP</a></li>
+      <li><a href="#" onClick="hotels();">Hotels in The Area</a></li>
+      <li><a href="#" onClick="things();">Things To Do</a></li>
+      <li><a href="#" onClick="liquor();">Liquor Stores</a></li>
+      <li><a href="#itinerary">Itinerary</a></li>
+      <li><a href="direct.html">See the Church</a>
+    </ul>
 </div>
 
-<p id=hideMe onclick="changeMe('none') "><a id=colorMe href="../EricDianaWedding.html">
-Click Here to visit Website </a></p>
+  <!-- Wrapper for slides -->
+ 
+ <div id='slide-1' class="container-fluid">
+ <div class="row">
+ <div class='col-lg-12'>
+ 
+   
+ <p class="moveRight" id="headlg" style="font-family: logieFont;"> Eric &amp; Diana</p>
+            
+            <p id='robo' style="font-family: logieFont;margin-left:8.25%;
+text-align:left;">August 5th <i class="fa fa-heart"></i> 2017</p>
+            
+            <p id="robo2"  class="moveRight" style="font-family: logieFont;"><strong style="margin-left:1.75%;">1PM @ GLENN UNITED METHODIST CHURCH</strong> </p>
+            <div id='hur'>__</div>
+            <div class="properBtn" style="padding:inherit;font-family: logieFont;"  href="#"> <span id="okl" onClick='direct();' style="cursor:pointer;">NEED DIRECTIONS? CLICK HERE<!--function blastOff--></div>
+           
+           <p id='directBottom' style="margin-left:8%;font-family: logieDistrict;"> SCROLL DOWN TO DISCOVER </p>
+		   
+           
+           <div class='row' style=' z-index:9999; padding-top:7.2em;'>
+		    <div class='col-xs-4 col-md-4' style=' color:#333;background-color:#333;'>
+		    TEST
+		   </div>
+		    <div class='col-xs-4 col-md-4' style='background-color:#333;'>
+		   
+		   </div>
+		   <div class='col-xs-4 col-md-4' style='background-color:#333;'>
+		   
+		   </div>
+		   </div>
+<!--/test rows-->
+<div class="row" style="padding:0 0 0 0;">
+<div class=" col-xs-offset-0 col-lg-12 ">
+<img src="honorofp2903.jpg" class="img-responsive center-block" />
+</div>
+</div>
+<div class="row" style="padding:0 0 0 0;">
+<div class="col-xs-offset-0 col-lg-12 ">
+<img src="test5web903.jpg" class="img-responsive center-block" />
+</div>
+</div>
+ <!-- -->
+<!--<div class="row" style="padding:2% 0 0 0">
+ <div class="col-md-3 col-sm-6 ">
+            <div class="service-box">
+                <div class="service-icon colorGrey" >
+                    <div class="front-content">
+                        <i class="fa fa-building-o"></i>
+                        <h3> Click for Hotels in the Area</h3>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>WEDDING INFO 1</h3>
+                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 ">
+            <div class="service-box">
+                <div class="service-icon colorGrey " >
+                    <div class="front-content">
+                        <i class="fa fa-location-arrow"></i>
+                        <h3> Click for Local Things To Do</h3>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>WEDDING INFO 2</h3>
+                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="service-box ">
+                <div class="service-icon colorGrey">
+                    <div class="front-content" >
+                        <i class="fa fa-user-plus"></i>
+                        <h3>Click to RSVP</h3>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><a href="https://ericplusdiana.app.rsvpify.com"> CLICK TO RSVP</a></h3>
+                    <p>Please RSVP to help us stay organized and keep everything undercontrol so we can all enjoy this special day to the fullest!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="service-icon colorGrey">
+                    <div class="front-content">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <h3> Click for WEDDING INFO 4</h3>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3>WEDDING INFO 4</h3>
+                    <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+</div> -->
 
-<!--<div class="menu" style="margin-left: 100%;">
-    <div class="title" style="font-size:72px; margin-left:-32.5%;"> MENU</div>
-    <ul class="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-</div>-->
+
+
+  <!-- -->
+
+      <div class="container">
+<div class="row">
+<div class="col-lg-12 col-xs-offset-0" style="">
 
 
 
+<!--<a style="margin-left:3.5%;" href="https://www.google.com/search?hotel_dates=2017-06-18%2C2017-06-19&rlla=0&ei=ges5WbPeKOjNjwSYxp6wBA&q=hotel+glen+south+haven&oq=hotel+glen+south+haven&gs_l=mobile-gws-serp.12...6399.6399.0.7571.2.2.0.0.0.0.78.78.1.1.0....0...1.1.64.mobile-gws-serp..1.0.0.YUwpG-S3wO4"> Click for hotels in Area</a>-->
+ <!--### option 1 ###-->
+<div id="option">
+ <img class="img-responsive left-block" src="hamptonwed2.jpg" alt="">
+ <img class="img-responsive left-block" src="hotel1weddhamp.jpg" alt="">
+ <a   href='tel:269-639-8550'><i style="margin-left:3.5%;" class="fa fa-phone"> 269-639-8550  </i></a>
+ </div>
+  <!--### option 2 ###-->
+ <div id="option2">
+ <img class="img-responsive left-block" src="hamptonwe.jpg" alt="">
+ <img class="img-responsive left-block" src="hotel1weddhamp.jpg" alt="">
+ <a   href='tel:269-639-8550'><i style="margin-left:3.5%;" class="fa fa-phone"> 269-639-8550  </i></a>
+ </div>
+ <!--### option 3 ###-->
+ <div id="option3">
+ <img class="img-responsive left-block" src="hamptonwed2.jpg" alt="">
+ <img class="img-responsive left-block" src="hotel1weddhap.jpg" alt="">
+ <a   href='tel:269-639-8550'><i style="margin-left:3.5%;" class="fa fa-phone"> 269-639-8550  </i></a>
+ </div>
+    <h2 class="hotelHeading" id='hotHeading'> Things To Keep Your Day Running Smoothly</h2>
+    
+    <img  style="max-width:370px;padding-bottom:1%;" class="img-responsive left-block" src="blueline2.png" alt="">
+    
+    <div class="switchHotels">
+    <!--below the blue bar-->
+      <div class="hotelSelect hotelSelect-1 fontD blkColor" >HOTELS IN THE AREA</div>
+      <div class="hotelSelect hotelSelect-2 fontD blkColor">LIQUOR STORES</div>
+      <div class="hotelSelect hotelSelect-3 fontD blkColor">RESTAURANTS&nbsp;<span id='amp' style="color:#39A5F7;">&amp;</span>&nbsp;ATTRACTIONS</div>
+      <span class="hoverClass hoverClass-1" onclick="hotels();"></span>
+      <span class="hoverClass hoverClass-2" onClick="liquor();"></span>
+      <span class="hoverClass hoverClass-3" onClick="things();"></span>
+      <div class="highlightSelectionblue">
+        <div class="switchHotels">
+        <!--above the blue bar-->
+          <div class="hotelSelect fontD" >HOTELS IN THE AREA</div>
+          <div class="hotelSelect fontD">LIQUOR STORES </div>
+          <div class="hotelSelect fontD ">RESTAURANTS&nbsp;<span id='mp2' style="color:#39A5F7;">&amp;</span>&nbsp;ATTRACTIONS</div>
+        </div>
+    
+     
+         
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="color:#000; padding-top:19px;">click an option</p>
+</div>
+</div>
+</div>
+<!-- -->
+<div class="row">
+<div class="col-lg-12">
+<!-- -->
+     
+    <div class="agenda" id='itinerary'>
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">Glenn</div>
+                            <div class="dayofweek">United Methodist Church</div>
+                            <div class="shortdate text-muted">August 5th, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            1:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">                
+                                Ceremony
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Single event in a single day -->
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">Glenn</div>
+                            <div class="dayofweek">Community Center</div>
+                            <div class="shortdate text-muted">August 5th, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            Immediately Following Ceremony - 5:30PM  
+                        </td>
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">                
+                                Reception
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Multiple events in a single day (note the rowspan) -->
+                     <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">Lake</div>
+                            <div class="dayofweek">Bluff Inn &amp; Suites</div>
+                            <div class="shortdate text-muted">August 5th, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            6:30PM 
+                        </td>
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">                
+                                Post-Reception
+                            </div>
+                        </td>
+                    </tr>
+                   
+                    <!---->
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+  <script>
+ 
+function hotels (x){window.open("https://www.google.com/search?q=hotels+glen+michigan+south+haven&oq=hotels+glen+michigan+south+haven&aqs=chrome..69i57.16396j0j7&sourceid=chrome&ie=UTF-8#rlla=0&hotel_dates=2017-06-18,2017-06-19&hotel_occupancy=2&tbm=lcl&q=hotels+++south+haven+mi&rlfi=hd:2017-06-18,2017-06-19;si:9580587789045989583;mv:!1m3!1d25533.55146533345!2d-86.26611499999999!3d42.40263104999999!2m3!1f0!2f0!3f0!3m2!1i156!2i208!4f13.1");};
+
+function liquor (x){window.open("https://www.google.com/search?q=hotels+glen+michigan+south+haven&oq=hotels+glen+michigan+south+haven&aqs=chrome..69i57.16396j0j7&sourceid=chrome&ie=UTF-8#rlla=0&hotel_dates=2017-06-18,2017-06-19&hotel_occupancy=2&tbm=lcl&q=liquor+store+glen++south+haven&rlfi=hd:;si:4421035436211719656;mv:!1m3!1d12090.587495931311!2d-86.27112625!3d42.407934850000004!2m3!1f0!2f0!3f0!3m2!1i31!2i197!4f13.1");};
+
+function things (x){window.open("https://www.tripadvisor.com/Attractions-g42716-Activities-South_Haven_Van_Buren_County_Michigan.html");};
+
+function direct (x){window.open("direct.html");};
+
+function clix (y){document.getElementById('slideways').style.marginLeft='-70px'};
+									       
+function rsvp (x){window.open("https://ericplusdiana.app.rsvpify.com");};									       
+  </script>  
+    
 </body>
 </html>
